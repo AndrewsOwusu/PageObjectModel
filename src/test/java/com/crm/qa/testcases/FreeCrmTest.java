@@ -84,7 +84,7 @@ public class FreeCrmTest {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// now copy the screenshot to desired location using copyFile //method
 		FileUtils.copyFile(src, 
-				new File("C:\\Users\\egorogl\\_TMP\\selenium\\screenshots\\" + fileName +".png"));
+				new File("C:\\_TMP\\testing\\selenium" + fileName +".png"));
 
 	}
 
