@@ -20,7 +20,7 @@ public class FreeCrmTest {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Downloads\\chromedriver_win32.zip\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\_TMP\\testing\\selenium\\chromedriver.exe");
 //		System.setProperty("webdriver.chrome.driver", "C:\\Users\\egorogl\\_TMP\\selenium\\lib\\chromedriver.exe");
 		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
