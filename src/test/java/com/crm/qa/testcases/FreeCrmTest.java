@@ -24,9 +24,9 @@ public class FreeCrmTest {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\egorogl\\_TMP\\selenium\\lib\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
       		options.setExperimentalOption("useAutomationExtension", false);
-      		driver = new ChromeDriver(options);
+//      	driver = new ChromeDriver(options);
 		
-//		driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
 		driver.get("https://www.freecrm.com/index.html");
 	}
