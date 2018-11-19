@@ -22,8 +22,8 @@ public class FreeCrmTest {
 	public void setUp() throws Exception {
 //		System.setProperty("webdriver.chrome.driver", "C:\\Users\\egorogl\\Downloads\\chrome-win\\chrome-win\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\egorogl\\_TMP\\selenium\\lib\\chromedriver.exe");
-		ChromeOptions options = new ChromeOptions();
-      		options.setExperimentalOption("useAutomationExtension", false);
+//		ChromeOptions options = new ChromeOptions();
+//     		options.setExperimentalOption("useAutomationExtension", false);
 //      	driver = new ChromeDriver(options);
 		
 		driver = new ChromeDriver();
