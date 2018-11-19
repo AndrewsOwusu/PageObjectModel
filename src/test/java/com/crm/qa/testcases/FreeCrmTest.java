@@ -26,7 +26,24 @@ public class FreeCrmTest {
 //     		options.setExperimentalOption("useAutomationExtension", false);
 //      	driver = new ChromeDriver(options);
 		
-		driver = new ChromeDriver();
+		//Set the system property for chrome browser location
+				System.setProperty("webdriver.chrome.driver", Global.sChromeDriverPath);
+				//Set the Chrome capabilities
+			    ChromeOptions options = new ChromeOptions();
+			    options.addArguments("test-type");
+			    options.addArguments("start-maximized");
+			    options.addArguments("--js-flags=--expose-gc");
+			    options.addArguments("--enable-precise-memory-info");
+			    options.addArguments("--disable-popup-blocking");
+			    options.addArguments("--disable-default-apps");
+			    options.addArguments("--enable-automation");
+			    options.addArguments("test-type=browser");
+			    options.addArguments("disable-infobars");
+			    options.addArguments("disable-extensions");
+			    options.setExperimentalOption("useAutomationExtension", false);
+			    Global.driver = new ChromeDriver(options);
+		
+//		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
 		driver.get("https://www.freecrm.com/index.html");
 	}
